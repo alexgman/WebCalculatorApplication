@@ -15,7 +15,7 @@ namespace WebCalculatorService
             config.Routes.MapHttpRoute(
                 name: "CalculatorApi",
                 routeTemplate: "api/{action}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new { controller = "Values" }
             );
 
             appBuilder.UseWebApi(config);
